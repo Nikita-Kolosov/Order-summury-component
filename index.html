@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -11,33 +11,41 @@
   
   <title>Frontend Mentor | Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.google.com/specimen/Red+Hat+Display" rel="stylesheet">
 </head>
 <body>
 
-  Order Summary
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<div class="container">
+  <img class="background-image" src="images/illustration-hero.svg">
+  <div class="order-summary">
+    Order Summary
   </div>
+  <div class="info">
+    You can now listen to millions of <!--</br>--> songs, audiobooks, and podcasts on <!--</br>--> any
+    device anywhere you like!
+  </div>
+
+  <div class="content">
+    <img src="images/icon-music.svg">
+    <div class="cost">
+      Annual Plan</br>
+      <span style="color: #84899f; font-weight: 700; font-stretch: ultra-expanded; letter-spacing: .1em">$59.99/year</span>
+    </div>
+    <a href="#">
+      Change
+    </a>
+  </div>
+
+  <div class="button">
+    <a href="#">Proceed to Payment</a>
+  </div>
+
+  <div class="footer">
+    <a href="#">Cancel Order</a>
+  </div>
+
+</div>
 </body>
 </html>

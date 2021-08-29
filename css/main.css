@@ -1,11 +1,130 @@
 body {
-    background: url("../images/pattern-background-desktop.svg") no-repeat center top / cover;
-    font-family: 'Red hat display', sans-serif;
+    /*background: url("../images/illustration-hero.svg") no-repeat center top / cover; font-family: 'Red hat display', sans-serif;*/
+    font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
-    font-weight: bold;
-}
-
-h1, h2. h3, h4, h5, h6 {
+    background-color: #d6e1ff;
     margin: 0;
     padding: 0;
 }
+
+/* Mobile Content */
+.container {
+    margin: 67px auto;
+    max-width: 327px;
+    background-color: white;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+.background-image {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.order-summary {
+    text-align: center;
+    font-weight: 900;
+    padding: 34px 0 30px 0;
+    line-height: .8em;
+}
+
+.info {
+    font-size: 15px;
+    font-weight: 500;
+    color: #7d7f98;
+    text-align: center;
+    padding: 0 41px 28px 41px;
+    /*letter-spacing: em;*/
+    line-height: 1.5em;
+    font-stretch: ultra-expanded;
+}
+
+.content {
+    background-color: #f8f9fe;
+    margin: 0 24px 0 24px;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.cost {
+    color: #232b42;
+    padding-left: 20px;
+    font-weight: 900;
+    line-height: 1.5em;
+}
+
+.content a {
+    text-align: right;
+    padding-left: 33px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.button {
+    margin: 35px 24px 0 24px;
+    text-align: center;
+}
+
+.button a {
+    border-radius: 10px;
+    padding: 19px 43px;
+    background-color: #382ae1;
+    font-size: 15px;
+    font-weight: 900;
+    color: white;
+    letter-spacing: .1em;
+    text-decoration: none;
+}
+
+.footer {
+    padding: 40px 0 37px 0;
+    text-align: center;
+}
+.footer a {
+    font-weight: 900;
+    font-size: 15px;
+    color: #767d99;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+/* Links */
+.footer a:hover {
+    color: #222f3f;
+}
+
+.button a:hover {
+    background-color: #766bf6;
+}
+
+.content a:hover {
+    text-decoration: none;
+    color: #8176df;
+}
+
+/* Desktop content*/
+
+@media (min-width: 376px) {
+    .container {
+        max-width: 451px;
+    }
+    .order-summary{
+        font-size: 20px;
+    }
+    .content {
+        margin: 0 24px;
+    }
+    .content a {
+        padding-left: 140px;
+    }
+    .button a {
+        padding: 19px 105px;
+    }
+    body {
+        background: url("/images/pattern-background-desktop.svg") no-repeat center top, #e0e8ff;
+    }
+}
+
